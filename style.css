@@ -1,0 +1,1802 @@
+@import url("family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap");
+
+/*  ******  Reset Styles CSS  ******  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-weight: 600;
+  font-size: 42px;
+  color: #565659;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 36px;
+  color: #565659;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 29px;
+  color: #565659;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 22px;
+  color: #565659;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 12px;
+  color: #565659;
+}
+
+p {
+  font-size: 15px;
+  color: #565659;
+  margin: 15px 0 20px 0;
+}
+/* Padding entre secciones: */
+
+.section-p1 {
+  padding: 20px 60px;
+}
+
+.section-m1 {
+  margin: 30px 0;
+}
+
+#subtitulo {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+#subtitulo h2 {
+  font-size: 22px;
+  color: #565659;
+  font-weight: 100;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 15px;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #9c8c71;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.4s ease;
+}
+
+button.normal:hover {
+  transform: translateX(8px);
+  background-color: #880606;
+  color: #fff;
+  font-weight: 500;
+}
+
+button.white {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s ease;
+  margin-top: 50px;
+}
+
+button.white:hover {
+  transform: translateX(8px);
+  background-color: #880606;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+
+body {
+  width: 100%;
+}
+
+/*  ******  Header Start  ******  */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+  /*background-color: #f2f2f2;
+  background-color:#e3e7f3;*/
+  background-color: #ecedee;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 140px;
+  cursor: pointer;
+  transition: transform 0.6s;
+}
+
+.logo:hover {
+  transform: translateX(8px);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 12px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #606062;
+  transition: all 0.4s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #9c8c71;
+  transition: 0.4s ease;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 1.4px;
+  background-color: #9c8c71;
+  position: absolute;
+  bottom: -2px;
+  left: 12px;
+  transition: transform 0.5s;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+/*  ******  Home Page - HERO ******  */
+
+#hero {
+  background-image: url("img/hero2.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h1 {
+  color: #9c8c71;
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+#hero h3 {
+  font-size: 20px;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+#hero button {
+  color: #fff;
+  border: 0;
+  padding: 8px 30px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  transition: transform 0.5s;
+}
+
+#hero button:hover {
+  transform: translateX(15px);
+  color: #fff;
+  width: 900;
+}
+
+/*  ******  Home Page - PRODUCT 1 - DESTACADOS  ******  */
+
+#product1 {
+  text-align: center;
+}
+
+#product1 h2 {
+  font-size: 22px;
+  color: #565659;
+  font-weight: 200;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.03);
+  margin: 5px 0;
+  transition: 0.6s ease-in-out;
+  position: relative;
+}
+
+#product1 .pro:hover {
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.11);
+  transform: translateY(-15px);
+  border: 1px solid #ecedee;
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product1 .pro .description {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .description span {
+  color: #606062;
+  font-size: 12px;
+}
+
+#product1 .pro .description h5 {
+  padding-top: 7px;
+  color: #565659;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#product1 .pro .description i {
+  font-size: 16px;
+  color: rgb(245, 217, 59);
+}
+
+#product1 .pro .description h4 {
+  padding-top: 7px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #606062;
+}
+
+#product1 .pro .cart {
+  width: 60px;
+  height: 30px;
+  line-height: 35px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #606062;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/* ******  Home Page - BANNER CATEGORIA  ****** */
+
+#banner-categoria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#banner-categoria .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/banner/banner-skincare.png");
+  width: 48%;
+  min-width: 500px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform 0.8s;
+}
+
+#banner-categoria .banner-box-2 {
+  background-image: url("img/banner/banner-bodycare.png");
+}
+
+#banner-categoria .banner-box:hover {
+  transform: scale(1.05);
+}
+
+#banner-categoria h4 {
+  color: #565659;
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+
+#banner-categoria h2 {
+  color: #565659;
+  font-size: 19px;
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+
+#banner-categoria span {
+  color: #565659;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+
+#banner-categoria button {
+  color: #565659;
+  border: 1px solid #565659;
+  border-radius: 7px;
+}
+
+#banner-categoria .banner-box:hover button {
+  background-color: #880606;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+
+/*  ******  Home Page - FEATURE ******  */
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature .feature-box {
+  width: 170px;
+  text-align: center;
+  padding: 25px 15px;
+  border-radius: 20px;
+  margin: 15px 0;
+}
+
+#feature .feature-box:hover {
+  /*box-shadow: 10px 10px 54px rgba(70,62, 221, 0.01);*/
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.12);
+  border: 0.5px solid #ecedee;
+}
+
+#feature .feature-box img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#feature .feature-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  font-size: 12px;
+}
+
+/*  ******  Home Page - PRODUCT 2 NOVEDADES  ****** */
+
+#product2 {
+  text-align: center;
+}
+
+#product2 h2 {
+  font-size: 22px;
+  color: #565659;
+  font-weight: 200;
+}
+
+#product2 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  flex-wrap: wrap;
+}
+
+#product2 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.03);
+  margin: 5px 0;
+  transition: 0.6s ease-in-out;
+  position: relative;
+}
+
+#product2 .pro:hover {
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.11);
+  transform: translateY(-15px);
+  border: 1px solid #ecedee;
+}
+
+#product2 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product2 .pro .description {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product2 .pro .description span {
+  color: #606062;
+  font-size: 12px;
+}
+
+#product2 .pro .description h5 {
+  padding-top: 7px;
+  color: #565659;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#product2 .pro .description i {
+  font-size: 16px;
+  color: rgb(245, 217, 59);
+}
+
+#product2 .pro .description h4 {
+  padding-top: 7px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #606062;
+}
+
+#product2 .pro .cart {
+  width: 60px;
+  height: 30px;
+  line-height: 35px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #606062;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/* ****** Home Page - BANNER PARALLAX ******  */
+
+#banner-parallax {
+  background-image: url("img/banner/2d.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70% center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-left: 250px;
+}
+
+#banner-parallax h1 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #565659;
+  margin-top: 20px;
+}
+
+#banner-parallax h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #565659;
+}
+
+#banner-parallax button {
+  margin-top: 30px;
+}
+
+/*  ******  Home Page - PRODUCT 3 - MÁS VENDIDOS  ******  */
+
+#product3 {
+  text-align: center;
+}
+
+#product3 h2 {
+  font-size: 22px;
+  color: #565659;
+  font-weight: 200;
+}
+
+#product3 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  flex-wrap: wrap;
+}
+
+#product3 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.03);
+  margin: 5px 0;
+  transition: 0.6s ease-in-out;
+  position: relative;
+}
+
+#product3 .pro:hover {
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-15px);
+  border: 1px solid #ecedee;
+}
+
+#product3 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product3 .pro .description {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product3 .pro .description span {
+  color: #606062;
+  font-size: 12px;
+}
+
+#product3 .pro .description h5 {
+  padding-top: 7px;
+  color: #565659;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#product3 .pro .description i {
+  font-size: 16px;
+  color: rgb(245, 217, 59);
+}
+
+#product3 .pro .description h4 {
+  padding-top: 7px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #606062;
+}
+
+#product3 .pro .cart {
+  width: 60px;
+  height: 30px;
+  line-height: 35px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #606062;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/*  ******  Home Page - PROTOCOLO LIMPIEZA  ******  */
+
+#banner {
+  background-image: url("img/banner/banners-1.png");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 250px;
+  text-align: left;
+}
+
+#banner h4 {
+  color: #606062;
+  font-weight: 50;
+  font-size: 20px;
+}
+
+#banner h2 {
+  color: #606062;
+  font-size: 26px;
+  line-height: 24px;
+}
+
+#banner span {
+  font-style: italic;
+  color: #880606;
+}
+
+#banner button {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+
+/*  ******   Home Page - Inicio FOOTER  ******  */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.logo-footer {
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.6s;
+  padding-bottom: 10px;
+}
+
+.logo-footer:hover {
+  transform: translateX(8px);
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  color: #9c8c71;
+}
+
+footer h5 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #565659;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 12px;
+  color: #565659;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+footer .seguinos {
+  margin-top: 20px;
+}
+
+footer .seguinos i {
+  font-size: 22px;
+  color: #565659;
+  padding-right: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+footer .seguinos i:hover,
+footer a:hover {
+  color: #9c8c71;
+  transition: all 0.12s ease-out;
+}
+
+footer .install .row img {
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.06);
+  /*border: 0.5px solid #ECEDEE;*/
+  margin-right: 5px;
+}
+
+footer .install img {
+  margin: 5px 0 10px 0;
+}
+
+/*  ******  Home Page - Inicio FOOTER 2******  */
+
+#footer2 .copyright {
+  background-color: #ecedee;
+  padding: 5px 50px 5px 50px;
+}
+
+#footer2 .copyright p {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+/*  ******  SHOP PAGE - CATÁLOGO******  */
+
+#shop-header {
+  background-image: url("img/banner/banner-shop-2.png");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  /*background-position: top 25% right 0;*/
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#banner-parallax {
+  background-image: url("img/banner/2d.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70% center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-left: 250px;
+}
+
+#shop-header h3 {
+  color: #565659;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 100px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9c8c71;
+  padding: 10px 15px;
+  border-radius: 9px;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+#pagination a i {
+  font-size: 19px;
+}
+
+/*  ******  SINGLE PRODUCT  ******  */
+
+#pro-details {
+  display: flex;
+  margin-top: 20px;
+}
+
+#pro-details .single-product-img {
+  width: 40%;
+  margin-left: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+  transition: transform 0.6s;
+}
+
+.small-img-col:hover {
+  transform: translateY(10px);
+}
+
+#pro-details .single-product-details {
+  width: 50%;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+#pro-details .single-product-details h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+#pro-details .single-product-details h4 {
+  padding: 5px 0 5px 0;
+  font-size: 18px;
+}
+
+#pro-details .single-product-details h5 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #9c8c71;
+  margin: 7px 0px;
+}
+
+#pro-details .single-product-details h6 {
+  font-size: 13px;
+  color: #9c8c71;
+  margin: 15px 0px 8px 0;
+}
+
+/*
+#pro-details .single-product-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color:#565659;
+}
+*/
+
+#pro-details .single-product-details .cantidad {
+  font-size: 10px;
+  color: #565659;
+}
+
+#pro-details .single-product-details input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #9c8c71;
+  border-radius: 9px;
+}
+
+#pro-details .single-product-details input:focus {
+  outline: none;
+}
+
+#pro-details .single-product-details button {
+  font-size: 12px;
+  padding: 8px 15px;
+  width: 100%;
+  border-radius: 9px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#pro-details .single-product-details span {
+  line-height: 15px;
+  font-size: 14px;
+  color: #565659;
+}
+
+#pro-details .single-product-details button.normal:hover {
+  transform: translateY(-8px);
+}
+
+/*  ****** Inicio PRODUCTOS RELACIONADOS ******  */
+
+.related {
+  margin-top: 20px;
+}
+
+/*  ******  Inicio SKINCARE PAGE  ******  */
+/*  ******  Inicio BODYCARE PAGE  ******  */
+
+#skincare-header {
+  background-image: url("img/banner/banner-skincare-header.png");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+}
+
+#bodycare-header {
+  background-image: url("img/banner/banner-bodycare-header.png");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+}
+
+#skincare-header h3,
+#bodycare-header h3 {
+  color: #565659;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 120px;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9c8c71;
+  padding: 10px 15px;
+  border-radius: 9px;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+#pagination a i {
+  font-size: 19px;
+}
+
+/*  ******  ABOUT - NOSOTROS PAGE  ******  */
+
+#nosotros-header.nosotrosHeader {
+  background-image: url("img/about/banner-nosotros-header-dark.png");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: top 30% right 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+}
+
+#nosotros-head {
+  display: flex;
+  align-items: center;
+}
+
+#nosotros-head img {
+  width: 40%;
+  height: auto;
+  padding-top: 20px;
+}
+
+#nosotros-head div {
+  padding-left: 30px;
+}
+
+#nosotros-head h2 {
+  color: #565659;
+  font-size: 22px;  
+  font-weight: 200;
+  text-align: start;
+  padding: 10px 0px;
+}
+
+#nosotros-head li {
+  font-size: 15px;
+  line-height: 20px;
+  color: #565659;
+  font-weight: 100;
+  text-align: start;
+  padding: 5px 0;
+}
+
+#nosotros-head span {
+  font-style: italic;
+}
+
+/*  ******  ABOUT - NOSOTROS PAGE ! BANNER BIOTIPO ******  */
+
+#banner-biotipo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 60px;
+}
+
+#banner-biotipo .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url("img/banner/banner-dry-skin.png");
+  min-width: 23%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 25px 15px;
+  transition: transform 0.8s;
+}
+
+#banner-biotipo .banner-box:hover {
+  /*box-shadow: 10px 10px 54px rgba(70,62, 221, 0.01);*/
+  box-shadow: 15px 15px 25px rgba(156, 140, 113, 0.527);
+  border: 0.5px solid #ecedee;
+}
+
+#banner-biotipo .banner-box-2 {
+  background-image: url("img/banner/banner-mix-skin.png");
+}
+
+#banner-biotipo .banner-box-3 {
+  background-image: url("img/banner/banner-oil-skin.png");
+}
+
+#banner-biotipo .banner-box-4 {
+  background-image: url("img/banner/banner-normal-skin.png");
+}
+
+#banner-biotipo h2 {
+  color: #565659;
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+
+/*  ******  ABOUT NOSOTROS PAGE - BANNER 1 - ASESORAMIENTO ******  */
+
+#asesoramiento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecedee;
+  margin: 20px 0;
+}
+
+#asesoramiento img {
+  width: 50%;
+  height: auto;
+  padding-top: 90px;
+  padding-right: 30px ;
+}
+
+#asesoramiento h4 {
+  color: #606062;
+  font-weight: 50;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 50px;
+}
+
+#asesoramiento h2 {
+  color: #606062;
+  font-size: 28px;
+  padding-top: 10px;
+  padding-right: 20px;
+  text-align: left;  
+}
+
+#asesoramiento p {
+  padding-right: 80px;
+}
+
+#asesoramiento span {  
+  font-style: italic;
+  color: #880606;
+}
+
+/* ****** ABOUT - NOSOTROS PAGE | BANNER PROTOCOLO ****** */
+
+#protocolo-titulo {
+  font-size: 22px;
+  color: #565659;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#banner-protocolo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 60px;
+  margin-bottom: 30px;
+}
+
+#banner-protocolo .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-image: url("img/banner/banner-limpiar.png");
+  min-width: 23%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 25px 15px;
+  transition: transform 0.8s;
+  padding-top: 130px;
+}
+
+#banner-protocolo .banner-box:hover {
+  /*box-shadow: 10px 10px 54px rgba(70,62, 221, 0.01);*/
+  box-shadow: 15px 15px 25px rgba(156, 140, 113, 0.527);
+  border: none;
+}
+
+#banner-protocolo .banner-box-2 {
+  background-image: url("img/banner/banner-tonico-facial.png");
+}
+
+#banner-protocolo .banner-box-3 {
+  background-image: url("img/banner/banner-hidratacion.png");
+}
+
+#banner-protocolo .banner-box-4 {
+  background-image: url("img/banner/banner-proteccion-solar.png");
+}
+
+#banner-protocolo h2 {
+  color: #565659;
+  background-color: #ecedeea8;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+marquee {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  background-color: #9c8c71;
+  padding: 10px 0;
+}
+
+/*  ******  CONTACT PAGE  ******  */
+
+#contact-header.contactHeader {
+  background-image: url("img/banner/banner-contact-us.png");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: top 30% right 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+}
+
+#contact-head {
+  display: flex;
+  align-items: center;
+}
+
+#contact-head img {
+  width: 40%;
+  height: auto;
+  padding-top: 20px;
+}
+
+#contact-head div {
+  padding-left: 30px;
+}
+
+#contact-header h3 {
+  color: #565659;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 120px;
+}
+
+#contact-head li {
+  font-size: 15px;
+  line-height: 20px;
+  color: #565659;
+  font-weight: 100;
+  text-align: start;
+  padding: 5px 0;
+}
+
+#contact-head span {
+  font-style: italic;
+}
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 45%;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+  color: #565659;
+  font-size: 22px;
+  font-weight: 200;
+  text-align: start;
+  padding: 10px 0px;
+}
+
+#contact-details .details p {
+  font-size: 15px;
+  color: #565659;
+  padding-bottom: 20px;
+}
+
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+#contact-details .details li i {
+  font-size: 20px;
+  padding-right: 18px;
+}
+
+#contact-details .details li p {
+  margin: 0;
+  font-size: 16px;
+}
+
+#contact-details .contact-photo {
+  width: 50%;
+  height: auto;
+}
+
+#contact-details .contact-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  margin: 30px 0;
+}
+
+#form-details form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #afafaf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ****************************************  */
+/*  ******  Start Media Query  1160px ******  */
+
+@media (max-width: 1160px) {
+  .section-p1 {
+    padding: 20px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    z-index: 999;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    padding: 70px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  #navbar li a.active::after,
+  #navbar li a:hover::after {
+    width: 10%;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #606062;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #606060;
+    font-size: 20px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #hero {
+    height: 50vh;
+    padding: 0 50px;
+    background-position: top 30% right 45%;
+  }
+
+  #hero h1 {
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
+  #hero h3 {
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 10px;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .feature-box {
+    width: auto;
+    max-width: 170px;
+    margin: 15px 15px;
+  }
+
+  #product1 .pro-container {
+    justify-content: center;
+  }
+
+  #product2 .pro-container {
+    justify-content: center;
+  }
+
+  #product3 .pro-container {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+    margin: 15px;
+  }
+
+  #product2 .pro {
+    margin: 15px;
+  }
+
+  #product3 .pro {
+    margin: 15px;
+  }
+
+  #banner {
+    padding-left: 120px;
+    height: 50vh;
+  }
+
+  #banner-categoria .banner-box {
+    min-width: 100%;
+    height: 35vh;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  #banner-parallax {
+    height: 45vh;
+    padding-left: 100px;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  /*  ******  Shop Page  ******  */
+
+  #shop-header {
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+  }
+
+  #shop-header h3 {
+    display: none;
+  }
+
+  /*  ******  Product Page  ******  */
+
+  #pro-details {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #pro-details .single-product-details {
+    width: 50%;
+  }
+
+  #pro-details .single-product-details h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 8px 0;
+  }
+
+  #pro-details .single-product-details h6 {
+    margin: 8px 0px 8px 0px;
+  }
+
+  #pro-details .single-product-details h5 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #9c8c71;
+    margin: 0px;
+  }
+
+  #pro-details .single-product-img {
+    width: 38%;
+    margin-left: 0px;
+  }
+
+  #pro-details .single-product-details {
+    width: 58%;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-left: 2px;
+  }
+
+  #pro-details .single-product-details input {
+    width: 20%;
+    height: 26px;
+  }
+
+  #pro-details .single-product-details button {
+    font-size: 12px;
+    padding: 6px 12px;
+    width: 55%;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+
+  /*  ******  SKINCARE PAGE  ******  */
+  /*  ******  BODYCARE PAGE  ******  */
+
+  #skincare-header,
+  #bodycare-header {
+    height: 30vh;
+    background-position: top 30% right 25%;
+    background-repeat: no-repeat;
+  }
+
+  /*  ******  ABOUT NOSOTROS PAGE  ******  */
+  
+  #nosotros-header.nosotrosHeader {
+    height: 30vh;
+  }
+
+  #nosotros-head {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+
+  #nosotros-head img {
+    width: 100%;
+  }
+
+  #banner-biotipo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  #banner-biotipo .banner-box {
+    display: flex;
+    width: 40%;
+    height: 25vh;
+    margin: 15px;
+  }
+
+  #banner-protocolo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  #banner-protocolo .banner-box {
+    display: flex;
+    width: 40%;
+    height: 25vh;
+    margin: 15px;
+    padding-top: 15px;
+  }
+
+  #asesoramiento {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+
+  #asesoramiento img {
+    width: 90%;
+    padding-top: 30px;
+  }
+
+  #asesoramiento .texto-asesoramiento {
+    padding-left: 60px;
+    padding-bottom: 10px;
+    text-align: justify;
+  }
+
+  #asesoramiento p {
+    padding-top: 20px;
+  }
+
+  /*  ******  CONTACT PAGE  ******  */
+
+  #contact-header.contactHeader {
+    background-image: url("img/banner/banner-contact-us.png");
+    width: 100%;
+    height: 30vh;
+    background-position: top 30% right 22%;
+    background-repeat: no-repeat;
+  }
+
+}
+
+/*  ***************************************  */
+/*  ******  Start Media Query  650px ******  */
+
+@media (max-width: 650px) {
+  #header {
+    padding: 10px 30px;
+  }
+
+  #hero {
+    height: 60vh;
+    padding: 0 30px;
+    background-position: 55%;
+  }
+
+  #hero h1 {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  #hero h3 {
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 12px;
+  }
+
+  #hero button {
+    font-size: 14px;
+    padding: 8px 30px;
+    margin-top: 150px;
+  }
+
+  #navbar {
+    right: -100%;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #feature {
+    justify-content: space-between;
+  }
+
+  #feature .feature-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+
+  #product1 .pro {
+    width: 100%;
+  }
+
+  #product2 .pro {
+    width: 100%;
+  }
+
+  #product3 .pro {
+    width: 100%;
+  }
+
+  #banner-categoria .banner-box {
+    background-position: 66%;
+  }
+
+  #banner-categoria button {
+    margin-top: 70px;
+  }
+
+  #banner-categoria .banner-box {
+    margin-top: 20px;
+  }
+
+  #banner {
+    padding-bottom: 50px;
+    padding-left: 20px;
+    height: 35vh;
+    background-position: 55%;
+  }
+
+  #banner h2 {
+    color: #606062;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  #banner h4 {
+    color: #606062;
+    font-weight: 50;
+    font-size: 16px;
+  }
+
+  #banner button {
+    margin-top: 15px;
+    margin-bottom: 90px;
+  }
+
+  #banner-biotipo .banner-box {
+    width: 100%;
+  }
+
+  #banner-protocolo .banner-box {
+    width: 100%;  
+}
+
+  footer {
+    justify-content: flex-start;
+  }
+
+  footer .col {
+    margin: 20px 10px;
+    padding: 0 10px;
+  }
+
+  /*  ******  Shop Page  ******  */
+
+  #shop-header {
+    background-position: 75%;
+    width: 100%;
+    height: 30vh;
+  }
+
+  #shop-header h3 {
+    display: none;
+  }
+
+  /*  ******  Product Page  ******  */
+
+  #pro-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pro-details .single-product-img {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #pro-details .single-product-details {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+
+  /*  ******  Inicio SKINCARE PAGE  ******  */
+  /*  ******  Inicio BODYCARE PAGE  ******  */
+
+  #skincare-header,
+  #bodycare-header {
+    height: 35vh;
+    background-position: top 25% right 25%;
+    background-repeat: no-repeat;
+  }
+
+  #skincare-header h3,
+  #bodycare-header h3 {
+    display: none;
+  }
+}
