@@ -1263,8 +1263,7 @@ marquee {
   width: 45%;
 }
 
-#contact-details .details h2,
-#form-details form h2 {
+#contact-details .details h2 {
   color: #565659;
   font-size: 22px;
   font-weight: 200;
@@ -1275,7 +1274,8 @@ marquee {
 #contact-details .details p {
   font-size: 15px;
   color: #565659;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  text-align: justify;
 }
 
 #contact-details .details li {
@@ -1285,13 +1285,13 @@ marquee {
 }
 
 #contact-details .details li i {
-  font-size: 20px;
+  font-size: 26px;
   padding-right: 18px;
 }
 
 #contact-details .details li p {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 #contact-details .contact-photo {
@@ -1306,8 +1306,24 @@ marquee {
   margin: 30px 0;
 }
 
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding-left: 40px;
+  padding-right: 70px;
+}
+
+#form-details form h2 {
+  color: #565659;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: start;
+  padding-bottom: 20px;
+}
+
 #form-details form {
-  width: 90%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1316,11 +1332,39 @@ marquee {
 #form-details form input,
 #form-details form textarea {
   width: 100%;
-  padding: 12px 15px;
+  padding: 10px 15px;
   outline: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: none;
   border-bottom: 1px solid #afafaf;
+}
+
+
+#form-details .servicios div {
+  padding-bottom: 45px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#form-details .servicios div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+#form-details .servicios div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#form-details .servicios div p span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9c8c71;
 }
 
 
@@ -1332,11 +1376,8 @@ marquee {
 
 
 
-
-
-
-/*  ****************************************  */
-/*  ******  Start Media Query  1160px ******  */
+/* ************************************ */
+/* ***** Start Media Query 1160px ***** */
 
 @media (max-width: 1160px) {
   .section-p1 {
@@ -1473,7 +1514,7 @@ marquee {
     justify-content: space-around;
   }
 
-  /*  ******  Shop Page  ******  */
+  /*  ******  SHOP PAGE  ******  */
 
   #shop-header {
     background-position: center;
@@ -1485,7 +1526,7 @@ marquee {
     display: none;
   }
 
-  /*  ******  Product Page  ******  */
+  /*  ******  PRODUCT PAGE  ******  */
 
   #pro-details {
     display: flex;
@@ -1548,8 +1589,7 @@ marquee {
     background-repeat: no-repeat;
   }
 
-  /*  ******  ABOUT NOSOTROS PAGE  ******  */
-  
+  /*  *****  ABOUT NOSOTROS PAGE  *****  */
   #nosotros-header.nosotrosHeader {
     height: 30vh;
   }
@@ -1626,10 +1666,43 @@ marquee {
     background-repeat: no-repeat;
   }
 
+  #contact-details {
+    flex-direction: column;
+  }
+  
+  #contact-details .details {
+    width: 90%;
+  }
+  
+  #contact-details .details h2 {
+    padding: 0px;
+  }
+  
+  #contact-details .details p {
+    padding-bottom: 5px;
+  }
+  
+  #contact-details .details li {
+    padding: 7px 0;
+  }
+  
+  #contact-details .contact-photo {
+    width: 90%;
+    height: auto;
+  }
+  
+  #contact-details .contact-photo img {
+    margin: 20px 0;
+  }
+
+  #form-details .servicios div {
+    padding-bottom: 80px;
+  }
+
 }
 
-/*  ***************************************  */
-/*  ******  Start Media Query  650px ******  */
+/*  *********************************  */
+/*  **** Start Media Query 650px ****  */
 
 @media (max-width: 650px) {
   #header {
@@ -1755,7 +1828,7 @@ marquee {
     padding: 0 10px;
   }
 
-  /*  ******  Shop Page  ******  */
+  /*  ******  SHOP PAGE  ******  */
 
   #shop-header {
     background-position: 75%;
@@ -1767,7 +1840,7 @@ marquee {
     display: none;
   }
 
-  /*  ******  Product Page  ******  */
+  /*  ******  PRODUCT PAGE  ******  */
 
   #pro-details {
     display: flex;
@@ -1785,8 +1858,8 @@ marquee {
     padding-left: 0px;
   }
 
-  /*  ******  Inicio SKINCARE PAGE  ******  */
-  /*  ******  Inicio BODYCARE PAGE  ******  */
+  /* *****  SKINCARE PAGE *****  */
+  /* *****  BODYCARE PAGE *****  */
 
   #skincare-header,
   #bodycare-header {
@@ -1799,4 +1872,47 @@ marquee {
   #bodycare-header h3 {
     display: none;
   }
+  
+  /* *****  CONTACT PAGE *****  */
+  
+  #contact-details .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact-details .contact-photo {
+    width: 100%;
+  }
+
+  #contact-details .details h2 {
+    padding-top: 20px;
+  }
+
+  #form-details {
+    flex-direction: column;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+  #form-details form {
+    width: 90%;
+    align-items: center;
+    margin-bottom: 70px; 
+  }
+      
+  #form-details .servicios div {
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #form-details .servicios div img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-right: 35px;
+  }
+
 }
