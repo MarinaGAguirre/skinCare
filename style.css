@@ -668,26 +668,28 @@ body {
 footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-around;
+  align-items: center;
 }
 
 footer .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .logo-footer {
   width: 120px;
   cursor: pointer;
-  transition: transform 0.6s;
-  padding-bottom: 10px;
+  transition: transform 0.8s ease-in-out;
+  padding-bottom: 10px;  
 }
 
 .logo-footer:hover {
   transform: translateX(8px);
+  transition: transform 0.6s  ease-in-out;
 }
 
 footer h4 {
@@ -704,7 +706,7 @@ footer h5 {
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0 0 8px 0;
 }
 
@@ -713,6 +715,7 @@ footer a {
   color: #565659;
   text-decoration: none;
   margin-bottom: 8px;
+  transition: transform 0.6s  ease-in-out;
 }
 
 footer .seguinos {
@@ -725,12 +728,14 @@ footer .seguinos i {
   padding-right: 5px;
   padding-left: 5px;
   cursor: pointer;
+  transition: all 0.6s ease-in-out;
 }
 
 footer .seguinos i:hover,
 footer a:hover {
   color: #9c8c71;
-  transition: all 0.12s ease-out;
+  transform: translateX(8px);
+  transition: all 0.6s ease-in-out;
 }
 
 footer .install .row img {
@@ -755,6 +760,24 @@ footer .install img {
   width: 100%;
   text-align: center;
   font-size: 13px;
+}
+
+#footer2 .copyright a {
+  text-decoration: none;
+  color: #565659;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+}
+
+#footer2 .copyright a:hover {
+  color: #880606;
+  font-size: 15px;
+  transition: all .6s ease-in-out;
+}
+
+#footer2 .copyright a:hover {
+  transform: translateX(8px);
+  transition: all .6s ease-in-out;
 }
 
 /*  ******  SHOP PAGE - CATÁLOGO******  */
@@ -1766,67 +1789,78 @@ marquee {
   #product1 .pro {
     width: 100%;
   }
-
   #product2 .pro {
     width: 100%;
   }
-
   #product3 .pro {
     width: 100%;
   }
-
   #banner-categoria .banner-box {
     background-position: 66%;
   }
-
   #banner-categoria button {
     margin-top: 70px;
   }
-
   #banner-categoria .banner-box {
     margin-top: 20px;
   }
-
   #banner {
     padding-bottom: 50px;
     padding-left: 20px;
     height: 35vh;
     background-position: 55%;
   }
-
   #banner h2 {
     color: #606062;
     font-size: 20px;
     line-height: 20px;
   }
-
   #banner h4 {
     color: #606062;
     font-weight: 50;
     font-size: 16px;
   }
-
   #banner button {
     margin-top: 15px;
     margin-bottom: 90px;
   }
-
   #banner-biotipo .banner-box {
     width: 100%;
   }
-
   #banner-protocolo .banner-box {
     width: 100%;  
-}
-
+  } 
   footer {
     justify-content: flex-start;
   }
-
   footer .col {
     margin: 20px 10px;
     padding: 0 10px;
+    align-items: center;
+    width: 90%;
   }
+  footer a {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  footer h4 {
+    font-size: 16px;
+  }
+  footer h5 {
+    font-size: 20px;
+  }
+  footer .seguinos i {
+    font-size: 30px;
+  }
+  footer .img-install {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
 
   /*  ******  SHOP PAGE  ******  */
 
